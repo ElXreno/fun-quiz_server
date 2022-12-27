@@ -100,7 +100,7 @@ public class NewQuizQuestionsController : ControllerBase
             .FirstOrDefaultAsync();
 
         if (quiz == null) return NotFound();
-        
+
         var quizStage = quiz.QuizStages.FirstOrDefault(qs => qs.Id == stageId);
 
         if (quizStage == null) return NotFound();
@@ -139,7 +139,7 @@ public class NewQuizQuestionsController : ControllerBase
             .FirstOrDefaultAsync();
 
         if (quiz == null) return NotFound();
-        
+
         var quizStage = quiz.QuizStages.FirstOrDefault(qs => qs.Id == stageId);
 
         if (quizStage == null) return NotFound();
