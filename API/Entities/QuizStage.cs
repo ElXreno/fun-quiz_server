@@ -7,7 +7,7 @@ public class QuizStage
     public int Id { get; set; }
     public int ScorePerQuestion { get; set; }
     public ICollection<QuizQuestion> QuizQuestions { get; set; } = new List<QuizQuestion>();
-    
+
     public int QuizId { get; set; }
     public Quiz Quiz { get; set; }
 
